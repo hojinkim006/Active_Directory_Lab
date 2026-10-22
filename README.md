@@ -1,6 +1,6 @@
 # Active Directory Homelab
 Fall 2026: Personal Project 1
----
+***
 Server Device: Lenovo ThinkCentre M710q Mini
 Device Specs:
 - Core i5-6500T
@@ -9,7 +9,7 @@ Device Specs:
 
 *Originally 8GB DDR4, upgraded by adding 16GB stick*
 
----
+***
 **Setup:**
 1. Used Rufus to format flash drive w/ Proxmox ISO and replace Windows 11 on ThinkCentre
 
