@@ -6,6 +6,7 @@ Device Specs:
 - Core i5-6500T
 - 24GB DDR4
 - 256GB SSD
+
 *Originally 8GB DDR4, upgraded by adding 16GB stick*
 
 **Setup:**
