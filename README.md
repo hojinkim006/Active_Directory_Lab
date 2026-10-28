@@ -1,32 +1,41 @@
-# Active Directory Homelab
-Fall 2026: Personal Project 1
-***
-Server Device: Lenovo ThinkCentre M710q Mini
-Device Specs:
-- Core i5-6500T
-- 24GB DDR4
-- 256GB SSD
+# Active Directory Attack & Detection Lab
 
-*Originally 8GB DDR4, upgraded by adding 16GB stick*
+A virtualized Active Directory environment, built as a simulated company inside a home lab server, for practicing identity attacks and building detections in Splunk.
 
-***
-**Setup:**
-1. Used Rufus to format flash drive w/ Proxmox ISO and replace Windows 11 on ThinkCentre
+## Why I Built This
 
----
-2. Installed Tailscale on server & windows laptop:
+I worked with Active Directory during a past internship and wanted to expand that experience while getting more comfortable with core networking concepts. To do that, I'm building a small company from scratch inside a home lab server so I can set up, break, and defend a realistic environment.
 
-<img width="1446" height="392" alt="Screenshot 2026-10-21 232236" src="https://github.com/user-attachments/assets/dbbd4ea1-f91a-4a77-9fc3-6292a5ab41f3" />
+## Status
 
----
-3. Interact with Proxmox VE through server IP address:
+- [x] Mini PC set up as a dedicated host, RAM upgraded to 24GB
+- [x] Proxmox VE installed
+- [x] Secure remote access via Tailscale
+- [x] Internal-only lab network (`vmbr1`)
+- [x] First VM: Windows Server 2025 (`DC01`) installed with VirtIO drivers and renamed
+- [ ] Promote `DC01` to a domain controller
+- [ ] Windows 11 client joined to the domain
+- [ ] Proxmox hardening (2FA, non-root user)
+- [ ] OPNsense firewall
+- [ ] Logging (Sysmon + Splunk)
+- [ ] Attack simulation & detections
 
-<img width="1459" height="864" alt="Screenshot 2026-10-21 233222" src="https://github.com/user-attachments/assets/b7d112e4-26c2-4e68-b4bf-882fb0e599da" />
+## Hardware
 
----
-4. Installed Tailscale on macbook:
+| Component | Spec |
+|---|---|
+| Host | Lenovo ThinkCentre M710q (mini PC) |
+| RAM | 24GB |
+| Storage | 256GB |
 
-<img width="1322" height="450" alt="Screenshot 2026-10-22 at 11 14 05 AM" src="https://github.com/user-attachments/assets/0cf6f79d-90b8-4221-bca1-2279ab99b2a5" />
+## Tech Stack
 
----
+- **Virtualization:** Proxmox VE
+- **Remote access:** Tailscale
+- **Server OS:** Windows Server 2025 (Desktop Experience)
+- **Drivers:** VirtIO (storage, network, guest agent)
 
+## Write-ups
+
+1. Proxmox Setup *(in progress)*
+2. Windows Server / DC01 Setup *(in progress)*
