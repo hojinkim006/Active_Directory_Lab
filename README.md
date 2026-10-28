@@ -37,5 +37,5 @@ I worked with Active Directory during a past internship and wanted to expand tha
 
 ## Write-ups
 
-1. Proxmox Setup *(in progress)*
-2. Windows Server / DC01 Setup *(in progress)*
+1. Proxmox Setup *(`docs/proxmox-setup.md`)*
+2. Windows Server / DC01 Setup *(`docs/windows-server-setup.md`)*
