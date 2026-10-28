@@ -15,6 +15,7 @@
   3. During Windows install, loaded vioscsi storage driver from the VirtIO ISO
   4. Ran virtio-win-gt-x64: remaining drivers
   5. Ran virtio-win-guest-tools: QEMU guest agent, which allows Proxmox to view the VM server's IP and shut it down
+  6. Renamed server (Windows gave it a randome name) to DC01 (domain controller 1)
 
 **VM settings**
 
